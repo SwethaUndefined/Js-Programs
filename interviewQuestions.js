@@ -91,32 +91,57 @@
 // //true, false is printed because 0 and false are same, if  === checks both type and value. 0 is number and false is 
 // //boolean
 
-//Question 8
+// //Question 8
 
-var x = 23;
+// var x = 23;
 
-(function(){
-  var x = 43;
-  (function random(){
-    x++;
-    console.log(x);
-    var x = 21;
-  })();
-})(); 
+// (function(){
+//   var x = 43;
+//   (function random(){
+//     x++;
+//     console.log(x);
+//     var x = 21;
+//   })();
+// })(); 
 
-// NAN
+// // NAN
 
-// Question 9
+// // Question 9
 
-let hero = {
-    powerLevel: 99,
-    getPower(){
-      return this.powerLevel;
+// let hero = {
+//     powerLevel: 99,
+//     getPower(){
+//       return this.powerLevel;
+//     }
+//   }
+  
+//   let getPower = hero.getPower;
+//   let hero2 = {powerLevel:42};
+//   console.log(getPower());
+//   console.log(getPower.apply(hero2));
+
+
+  // Question 10
+
+  const a = function(){
+    console.log(this);
+  
+    const b = {
+      func1: function(){
+        console.log(this);
+      }  
     }
+  
+    const c = {
+      func2: ()=>{
+        console.log(this);
+      }
+    }
+  
+    b.func1();
+    c.func2();
   }
   
-  let getPower = hero.getPower;
-  
-  let hero2 = {powerLevel:42};
-  console.log(getPower());
-  console.log(getPower.apply(hero2));
+  a();
+
+  // this printed in global scope
