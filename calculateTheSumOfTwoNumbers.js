@@ -11,5 +11,5 @@ function pairOfNumbers(arr, num) {
   return pairs
 }
 
-var arr = [1, 14, 2, 13, 7, 8, 9, 6, 2, 4, 7];
+var arr = [1, 14, 2, 13, 7, 8];
 console.log(pairOfNumbers(arr, 15)) 
