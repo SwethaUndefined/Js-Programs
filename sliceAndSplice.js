@@ -10,3 +10,10 @@ console.log(arr)
 // slice will extract that value but splice will remove that value
 // splice - first arg is starting index, 2nd is counts to delete from starting index and third is adding values(optional)
 // slice - first arg is starting index and 2nd is last index
+
+
+var arr1 = [2,3,4,6,7,8,9];
+
+console.log(arr1.slice(1,3))
+console.log(arr1.splice(2,3))
+console.log(arr1)

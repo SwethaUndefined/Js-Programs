@@ -1,5 +1,3 @@
-
-
 function printPowersOfTwo(){
   let power = 2;
   while (power <=1024){

@@ -14,3 +14,14 @@ function fibonacci(n){
 
 var n = 10;
 console.log(fibonacci(n))
+
+
+
+function fibonacciRecurssion(n){
+  if(n<=1) return n;
+  return fibonacciRecurssion(n-1) + fibonacciRecurssion(n-2)
+}
+console.log(fibonacciRecurssion(7))
+
+
+

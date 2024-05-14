@@ -29,3 +29,27 @@ console.log(b1)
 console.log(lastName)
 
 
+var arra = [1,2,3,4,5];
+
+const [one,two,three,four,five] = arra;
+console.log(one,three,two,four,five)
+
+
+var obj = {
+    firstName1 : "Swetha",
+    lastName1 : "Ragunathan"
+}
+
+const {firstName1,lastName1} = obj
+console.log(firstName1,lastName1)
+
+var obj1 = {
+    firstName2 : "Swetha",
+    lastName2 : "Ragunathan",
+    obj3 : {
+        age2 : 24
+    }
+}
+
+const{firstName2,lastName2,obj3 :{age2}} = obj1;
+console.log(firstName2,lastName2,age2)

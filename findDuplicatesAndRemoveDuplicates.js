@@ -6,7 +6,5 @@ console.log(ans)
 
 var arrr = [1,2,3,4,4,5,2];
 
-var duplicates = arrr.filter((element,index)=> arrr.indexOf(element) !== index)
+var duplicates = arrr.filter((element,index)=> arr.indexOf(element) !== index)
 console.log(duplicates)
-
-

@@ -1,6 +1,6 @@
 // All three are js methods for manipulate with this 
 
-// Call, using call to inovke the func
+// Call, using call to invoke the func
 var obj = {
     fullName : function(){
         return this.firstName + " "+this.lastName

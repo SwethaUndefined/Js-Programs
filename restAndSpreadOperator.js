@@ -18,5 +18,5 @@ console.log(findLength(2))
 console.log(findLength())
 
 // Rest and spread operator are syntax wise looking like same. but they are for different purposes. When need to iterate the
-//array in any place, we user spread operator and when we dont know how many arguments may come that time we can use
+//array in any place, we use spread operator and when we dont know how many arguments may come that time we can use
 //rest operator
