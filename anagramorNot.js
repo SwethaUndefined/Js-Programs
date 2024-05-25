@@ -1,10 +1,12 @@
 
 
+
 function anagramOrNot(str1,str2){
-    var item1 = str1.replace(/\s/g,'').toLowerCase().split('').sort().join('');
-    var item2 = str2.replace(/\s/g, '').toLowerCase().split('').sort().join('');
-    return item1 === item2;
+  var item1 = str1.replace(/\s/g,"").toLowerCase().split("").sort().join("");
+  var item2 = str2.replace(/\s/g,"").toLowerCase().split("").sort().join("");
+  return item1 == item2;
 }
+
 
 console.log(anagramOrNot("param", "rapam")); 
 console.log(anagramOrNot("listen", "silent")); 

@@ -12,5 +12,6 @@ function sumOfTwoNumbers(arr,num){
 }
 
 
-var arr = [1,2,3,4,5,0];
+var arr = [1,2,3,4,5,0,6,0,5,3,2,1];
+arr = [...new Set(arr)]
 console.log(sumOfTwoNumbers(arr,5))

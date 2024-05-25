@@ -1,11 +1,11 @@
-function printNumbersArray(start, end, result = []) {
-    if (start <= end) {
-      result.push(start);
-      printNumbersArray(start + 1, end,result);
-    }
-    return result;
+
+function printNumbersArray(start,end,result=[]){
+  if(start<=end){
+    result.push(start);
+    printNumbersArray(start+1,end,result)
   }
-  
+  return result
+}
   const numbersArray = printNumbersArray(1, 5);
   console.log(numbersArray);
   

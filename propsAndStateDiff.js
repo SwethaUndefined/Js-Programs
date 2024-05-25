@@ -8,5 +8,5 @@
 //State
 
 //1. State are passed within the component
-//2. State is read and write only
+//2. State is read and write 
 //3. State is mutable

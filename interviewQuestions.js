@@ -47,6 +47,33 @@ function func1(){
 
   //This will print 2 and 12 after 3000, even though let cant be hoisted it will print. Because of async nature, the function
   // will run immediately not wait for 3000
+  // because of closure, 
+//   In this code snippet, we have a function func1 that defines a setTimeout callback. Let's break down what happens step by step:
+
+// Function Execution: When func1 is called, it enters the execution context.
+
+// Variable Declarations:
+
+// var x = 2;: A variable x is declared using var and initialized to 2. Variables declared with var are function-scoped, meaning they are hoisted to the top of the function and initialized with undefined until assigned a value.
+// let y = 12;: A variable y is declared using let and initialized to 12. Variables declared with let are block-scoped and are not hoisted.
+// setTimeout Callback:
+
+// Inside the setTimeout callback, there are two console.log statements attempting to log the values of x and y.
+// Closure and Lexical Environment:
+
+// Both x and y are captured by the closure created by the arrow function passed to setTimeout.
+// The closure captures the references to x and y in the lexical environment in which it was created.
+// setTimeout Execution:
+
+// The setTimeout function schedules the execution of its callback after 3000 milliseconds.
+// At this point, x has been assigned the value 2, and y has been assigned the value 12.
+// Logging Values:
+
+// After 3000 milliseconds, the setTimeout callback executes.
+// When attempting to log x, it prints 2. Since x was declared with var, it is function-scoped and accessible within the callback.
+// When attempting to log y, it prints 12. Since y was declared with let, it is block-scoped and accessible within the callback due to the closure capturing its lexical environment.
+// In summary, both x and y are accessible within the setTimeout callback, with x being accessed via the closure and y being accessible due to its block scope.
+
 
   //Question 4
 
