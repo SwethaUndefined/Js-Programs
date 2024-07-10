@@ -1,7 +1,7 @@
 
 
 function findLargestWord(str){
-   var splitTheWords = str.split(" ");
+  var splitTheWords = str.split(" ");
   console.log(splitTheWords)
   let longestWord = "";
   for(var i=0;i<splitTheWords.length;i++){

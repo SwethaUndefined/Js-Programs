@@ -2,7 +2,7 @@ let printFullName = function (state,numbers){
     console.log(this.firstName + " "+this.lastName+" "+state+" "+numbers)
 }
 
-let name = {
+let name1 = {
 firstName : "Swetha",
 lastName : "Ragunathan",
 }
@@ -10,7 +10,7 @@ let name2 = {
 firstName : "Sachin",
 lastName : "Tendulkar",
 }
-printFullName.call(name)
+printFullName.call(name1)
 printFullName.call(name2)
 printFullName.call(name2,"Mumbai")
 printFullName.apply(name2, ["Mumbai", [1, 2, 3]]);
