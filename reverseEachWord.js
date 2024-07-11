@@ -5,8 +5,7 @@ function reverseWordsInString(str) {
     const reversedWordsArray = wordsArray.map(word => {
       return word.split('').reverse().join('');
     });
-  
-    // Join the reversed words back into a single string
+     console.log(reversedWordsArray)
     const reversedStr = reversedWordsArray.join(' ');
   
     return reversedStr;
