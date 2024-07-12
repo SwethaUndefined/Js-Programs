@@ -27,6 +27,8 @@ const ControlledComponent = () => {
 // Benefits:
 // Provides a single source of truth for the input value.
 // Enables validation and manipulation of the input value before updating the state.
+
+
 // Ensures consistency between the UI and React state.
 // Uncontrolled Components
 // Definition: Uncontrolled components are components where form data is handled by the DOM itself.

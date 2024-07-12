@@ -2,4 +2,4 @@
 
 
 
-// Instead construtor
+// Inside the construtor

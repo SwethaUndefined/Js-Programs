@@ -19,8 +19,12 @@ console.log(arr2)
 
 let obj1 = { a: 1, b: { c: 2 } };
 let obj2 = { ...obj1 }; // Shallow copy
+console.log(obj2,"obj2")
+obj2.a=2;
+console.log(obj2,"obj2")
 obj2.b.c= 3;
 obj2.a = 4;
+console.log(obj2,"obj2")
 console.log(obj1); // Output: 3 (affected because of shared reference)
 
 

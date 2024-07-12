@@ -1,6 +1,7 @@
-//The Browser Object Model (BOM) provides JavaScript access to the browser window and its components beyond just manipulating the document displayed. 
+//The Browser Object Model (BOM) provides JavaScript access to the browser window and its components 
+// beyond just manipulating the document displayed. 
 
-// Key Differences:
+// Key Differences b/w dom and bom:
 // Purpose: BOM focuses on providing JavaScript access to browser-specific features and functionalities outside 
 // the document content, whereas DOM focuses on representing the structure and content of HTML documents 
 // for manipulation.
