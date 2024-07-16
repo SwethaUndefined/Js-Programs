@@ -30,3 +30,13 @@ console.log(obj1.greet()); //Hello, undefined!  because no binding of this
 
 // Arrow functions do not bind their own this context; instead, they inherit this from their 
 // lexical (surrounding) scope.
+
+
+
+//main difference between arrow and regular function is this keyword and syntax is more readable in arrow
+// function than regular function. in regular function this binds with the respective object, in arrow this binds 
+// with the global object
+
+
+//Arrow functions prevent the common issue of this referring to unexpected objects,
+// especially in nested functions or callbacks
