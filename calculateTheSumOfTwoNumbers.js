@@ -15,3 +15,20 @@ function sumOfTwoNumbers(arr,num){
 var arr = [1,2,3,4,5,0,6,0,5,3,2,1];
 arr = [...new Set(arr)]
 console.log(sumOfTwoNumbers(arr,5))
+
+
+
+
+function removeDuplicates(arr) {
+  var uniqueArray = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (uniqueArray.indexOf(arr[i]) === -1) {
+      uniqueArray.push(arr[i]);
+    }
+  }
+  return uniqueArray;
+}
+
+var array = [1, 2, 2, 3, 4, 4, 5];
+var uniqueArray = removeDuplicates(array);
+console.log(uniqueArray); 

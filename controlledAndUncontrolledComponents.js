@@ -1,4 +1,5 @@
-// Controlled and uncontrolled components are terms used in React to describe how form elements (like inputs, selects, and textareas) manage their state and behavior. Here’s an explanation of each:
+// Controlled and uncontrolled components are terms used in React to describe how form elements
+//  (like inputs, selects, and textareas) manage their state and behavior. Here’s an explanation of each:
 
 // Controlled Components
 // Definition: Controlled components are components where form data is handled by React state.
