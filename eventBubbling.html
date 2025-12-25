@@ -46,9 +46,9 @@
         document.querySelector('.div4').addEventListener('click', function() {
             console.log('Div 4 Clicked');
         });
-        document.querySelector('.div5').addEventListener('click', function() {
+        document.querySelector('.div5').addEventListener('click', function(event) {
             console.log('Div 5 Clicked');
-            // event.stopPropagation();
+            event.stopPropagation()
         });
     </script>
 </body>

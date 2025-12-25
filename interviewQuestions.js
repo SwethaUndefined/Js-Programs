@@ -1,17 +1,17 @@
 
 
 // Question 1
-declaration();
-// expression();
+// declaration();
+// // expression();
 
-// This will hoisted so it will print Calculating..... in console but in expression function not hoisted with arrow function
-function declaration(){
-    console.log("Calculating.....")
-}
+// // This will hoisted so it will print Calculating..... in console but in expression function not hoisted with arrow function
+// function declaration(){
+//     console.log("Calculating.....")
+// }
 
-const expression = ()=>{
-    console.log("Again Calculating.....")
-}
+// const expression = ()=>{
+//     console.log("Again Calculating.....")
+// }
 
 
 //Question 2
@@ -26,24 +26,24 @@ for(var i=0;i<3;i++){
 
 //If I want to print 0,1,2...need to change the var to let, because let is a block scope
 
-for(let i=0;i<3;i++){
-    setTimeout(()=>{
-        console.log(i)
-    },100)
-}
+// for(let i=0;i<3;i++){
+//     setTimeout(()=>{
+//         console.log(i)
+//     },100)
+// }
 
 
 //Question 3
 function func1(){
-    setTimeout(()=>{
-      console.log(x);
-      console.log(y);
-    },3000);
+  //   setTimeout(()=>{
+  //     console.log(x);
+  //     console.log(y);
+  //   },3000);
   
-    var x = 2;
-    let y = 12;
-  }
-  func1();
+  //   var x = 2;
+  //   let y = 12;
+  // }
+  // func1();
 
   //This will print 2 and 12 after 3000, even though let cant be hoisted it will print. Because of async nature, the function
   // will run immediately not wait for 3000
